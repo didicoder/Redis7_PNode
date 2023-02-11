@@ -1,0 +1,10 @@
+#配置数据库
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://${spring.redis.host}/redis_PNode
+      username: root
+      password: 76360127
+
+

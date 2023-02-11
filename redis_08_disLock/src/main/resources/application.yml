@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    group:
+      "dev": devWeb,devRedis,devDB
+    active: dev
+
+
+#配置mybatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  type-enums-package: redis_05.enums
+  global-config:
+    db-config:
+      id-type: auto

@@ -1,0 +1,20 @@
+#配置redis
+spring:
+  redis:
+    host: 192.168.93.130
+    port: 6379
+
+#    #配置sentinel
+#    sentinel:
+#      master: mymaster
+#      nodes: ${spring.redis.host}:26380,${spring.redis.host}:26381,${spring.redis.host}:26382
+
+
+#    #配置cluster
+#    cluster:
+#      nodes: ${spring.redis.host}:6380,${spring.redis.host}:6381,${spring.redis.host}:6382,${spring.redis.host}:6383,${spring.redis.host}:6384,${spring.redis.host}:6385
+
+  #配置缓存
+  cache:
+    type: redis
+    cache-names: linux

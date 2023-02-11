@@ -1,0 +1,20 @@
+#配置数据库
+spring:
+  datasource:
+    # 添加druid-spring-boot-starter依赖
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatisplus
+      username: root
+      password: 76360127
+
+
+#配置mybatisplus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  type-enums-package: redis_05.enums
+  global-config:
+    db-config:
+      id-type: auto
