@@ -1,0 +1,5 @@
+#redis配置文件
+spring:
+  redis:
+    host: localhost
+    port: 6379
